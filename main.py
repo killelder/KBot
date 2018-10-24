@@ -39,8 +39,7 @@ def Kweather():
 def SendMsg(msg):
     
     url_ifttt = "https://maker.ifttt.com/trigger/stockLINE/with/key/"+iftttkey.key+"?value1="
-    res1 = requests.get(url_ifttt+msg)
-    
+    res1 = requests.get(url_ifttt+msg)    
     return res1
     
 if __name__ == "__main__":   
